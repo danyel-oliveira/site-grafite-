@@ -1,0 +1,213 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-top: 60px; /* compensar menu fixo */
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* Menu de navegação */
+ul#menu {
+    background-color: #D9D0A3;
+    line-height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu a:link,
+#menu a:visited {
+    display: inline-block;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    transition: background-color 0.3s;
+}
+
+#menu a:hover,
+#menu a:active {
+    background-color: #2C3540;
+}
+
+/* Seção Home com imagem de fundo */
+#home {
+    background-image: url(../images/01.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+/* Seção Sobre */
+#about {
+    background-color: #171C26;
+    min-height: 100vh;
+    padding: 50px 20px;
+    color: #FFF;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: justify;
+
+}
+
+/* Seção Galeria */
+#gallery {
+    background-color: #171C26;
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Seção Mapa */
+#maps {
+    min-height: 60vh;
+}
+
+/* Seção Contatos */
+#contacts {
+    background-color: #3D5E73;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contacts form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacts label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#contacts input,
+#contacts textarea {
+    width: 100%;
+    max-width: 500px;
+    font-size: 1rem;
+    padding: 15px;
+    margin-top: 8px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#contacts button {
+    margin-top: 2rem;
+    background-color: #F2F1E4;
+    color: #000;
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+#contacts button:hover {
+    background-color: #e0dfd0;
+    transform: scale(1.05);
+}
+
+/* Botão flutuante */
+.botao-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2C3540;
+    color: white;
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 999;
+}
+
+.botao-flutuante:hover {
+    background-color: #171C26;
+    transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: #2C3540;
+    text-align: center;
+    padding: 20px;
+    color: #FFF;
+    font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #menu {
+        flex-wrap: wrap;
+    }
+
+    #menu li {
+        flex: 1 0 50%;
+        text-align: center;
+    }
+
+    .gallery img {
+        width: 90%;
+        height: auto;
+    }
+
+    #contacts input,
+    #contacts textarea {
+        width: 90%;
+    }
+}
