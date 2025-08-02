@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grafite</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="description" content="Site sobre a arte do grafite: história, técnicas, estilos, galeria e contato.">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul id="menu">
+        <li><a href="#home">Início</a></li> 
+        <li><a href="#about">Sobre</a></li> 
+        <li><a href="#gallery">Galeria</a></li> 
+        <li><a href="#maps">Mapa</a></li> 
+        <li><a href="#contacts">Contatos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <!-- Conteúdo da seção Início (opcional) -->
+    </section>
+
+    <section id="about">
+      <h2>Sobre o Grafite</h2>
+
+      <h3>História e Origens</h3>
+      <p>O grafite é uma forma de arte urbana que tem suas raízes na cultura de rua e no movimento hip-hop. Originado nas décadas de 1960 e 1970 em cidades como Nova York, o grafite começou como uma maneira de jovens expressarem suas identidades e reivindicarem espaço na paisagem urbana. Com o tempo, evoluiu para uma forma de arte reconhecida mundialmente, com diversas técnicas e estilos.</p>
+      <p>No Brasil, o grafite ganhou popularidade na década de 1980, especialmente em São Paulo. Artistas como Os Gêmeos, Nunca e Kobra se tornaram ícones internacionais, reconhecidos por seus murais vibrantes e detalhados que abordam temas culturais, sociais e políticos.</p>
+
+      <h3>Técnicas e Estilos</h3>
+      <p>Os grafiteiros utilizam diversas técnicas para criar suas obras, incluindo:</p>
+      <ul>
+        <li><strong>Spray:</strong> A técnica mais comum, que permite uma aplicação rápida e flexível da tinta.</li>
+        <li><strong>Stencil:</strong> Utiliza moldes cortados para aplicar desenhos precisos e repetíveis.</li>
+        <li><strong>Pincel e Rolo:</strong> Menos comum, mas usado para detalhes ou grandes áreas de cor.</li>
+      </ul>
+      <p>Os estilos variam significativamente, desde o simples "tagging" até murais detalhados. Alguns dos estilos mais conhecidos incluem:</p>
+      <ul>
+        <li><strong>Throw-up:</strong> Letras simples e grandes, geralmente feitas rapidamente.</li>
+        <li><strong>Piece:</strong> Abreviação de "masterpiece", são peças complexas e coloridas.</li>
+        <li><strong>Wildstyle:</strong> Letras intricadas e entrelaçadas, frequentemente difíceis de ler.</li>
+      </ul>
+
+      <h3>Referências</h3>
+      <ul>
+        <li>Pereira, Claudio. "A História do Grafite." Revista Arte Urbana, 2019.</li>
+        <li>Silva, João. "O Impacto Social do Grafite nas Comunidades Urbanas." Universidade de São Paulo, 2020.</li>
+      </ul>
+      <p>Essa visão abrangente sobre o grafite ajuda a entender sua importância não apenas como uma expressão artística, mas também como um fenômeno social e cultural.</p>
+    </section>
+
+    <section id="gallery">
+      <h2>Galeria de Fotos</h2>
+      <div class="gallery">
+        <img src="images/01.jpg" alt="Grafite 01" width="500" height="400">
+        <img src="images/02.jpg" alt="Grafite 02" width="500" height="400">
+        <img src="images/03.jpg" alt="Grafite 03" width="500" height="400">
+        <img src="images/04.jpg" alt="Grafite 04" width="500" height="400">
+        <img src="images/05.jpg" alt="Grafite 05" width="500" height="400">
+        <img src="images/06.jpg" alt="Grafite 06" width="500" height="400">
+      </div>
+    </section>
+
+    <section id="maps">
+      <h2>Localização</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.823909657044!2d-47.9100988251016!3d-15.813236384829795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3001ee04de87%3A0xc69d1c63c14b9482!2sVia%20W3%20Sul%20-%20Bras%C3%ADlia%2C%20DF!5e0!3m2!1spt-BR!2sbr!4v1714779606689!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="500"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <section id="contacts">
+      <h2>Contatos</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="3" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Botão flutuante -->
+  <button class="botao-flutuante" onclick="voltarAoTopo()" title="Voltar ao topo">
+    ↑
+  </button>
+
+  <footer>
+    <p>&copy; 2024 - Todos os Direitos Reservados :: Desenvolvido por: Danyel B. Oliveira</p>
+  </footer>
+
+  <script>
+    // Função para voltar ao topo da página
+    function voltarAoTopo() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // Opcional: Mostrar/ocultar o botão baseado na posição do scroll
+    window.addEventListener('scroll', function() {
+      const botao = document.querySelector('.botao-flutuante');
+      if (window.pageYOffset > 300) {
+        botao.style.display = 'block';
+      } else {
+        botao.style.display = 'none';
+      }
+    });
+
+    // Inicialmente ocultar o botão
+    document.addEventListener('DOMContentLoaded', function() {
+      const botao = document.querySelector('.botao-flutuante');
+      botao.style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>
