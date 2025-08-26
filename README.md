@@ -15,7 +15,7 @@
 
 ## 📋 Sobre o Projeto
 
-Este foi o meu 1° site desenvolvido como projeto acadêmico no curso de **Análise e Desenvolvimento de Sistemas** e tem como objetivo apresentar a **arte do grafite** de forma educativa e visualmente atrativa. O projeto explora a história, técnicas, estilos e o impacto cultural desta importante manifestação artística urbana.
+Este foi o meu 1° site desenvolvido como projeto acadêmico no curso de **Análise e Desenvolvimento de Sistemas** e tem como objetivo apresentar a **arte do grafite** de forma educativa e visualmente atrativa. Esse site desenvolvi em HTML e CSS. O projeto explora a história, técnicas, estilos e o impacto cultural desta importante manifestação artística urbana.
 
 ## ✨ Funcionalidades
 
